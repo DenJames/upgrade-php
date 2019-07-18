@@ -11,7 +11,7 @@ solutionprovided by this router engine
   6. it support object buffer i.e allow content to be push to screen after every write to $plugin->res->body() or $plugin->res->pipe->push("");
 usage 
 <pre>
-\<\?php
+<?php
 require_once "../RestfulApi.php";
 // require_once '../../smarty-3.1.33/libs/Smarty.class.php';
 /**
@@ -65,5 +65,5 @@ $api->preg_route("@(.*)@",["GET"])->run(function($plugins){
     echo $path->get_file($path->staticPath().$path->currentPath());
 });
 // print_r($GLOBALS['RestfulApi']);
-\?\>
+?>
 </pre>

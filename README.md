@@ -1,6 +1,6 @@
 # RestfulApi
 this is a resfulapi server build on php5.4 and above but tested on php7.2
-all echo out of run is into display in the output buffer
+all echo out of run into display in the output buffer is ignored
 
 solutionprovided by this router engine
   1. it allow nesting

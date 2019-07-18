@@ -40,13 +40,12 @@ $api->runPlugin("buildroute",function($plugin){
         //echo $path->currentPath();
     });
 });
-foreach($webmaster->website("pages") as $vals){
+foreach([["url"=>"/home","name"=>"home"],["url"=>"/about","name"=>"about"],["url"=>"/contact","name"=>"contact"]] as $vals){
     $api->route($vals['url'],["GET"])->run(function($plugins){
         $path=$plugins->path;
         $url = $path->currentPath();     
     });
 }
-
 $api->preg_route("@(.*)@",["GET"])->run(function($plugins){
     print_r($plugins->data);
     $path=$plugins->path;

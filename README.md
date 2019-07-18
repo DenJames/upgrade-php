@@ -11,19 +11,19 @@ solutionprovided by this router engine
   6. it support object buffer i.e allow content to be push to screen after every write to $plugin->res->body() or $plugin->res->pipe->push("");
 usage 
 
-<?php
-require_once "../RestfulApi.php";
-// require_once '../../smarty-3.1.33/libs/Smarty.class.php';
-/**
-* use this in a htaccess file to make the restful api work
-* <IfModule mod_rewrite.c>
-*    RewriteEngine On
-*    RewriteBase /
-*    #RewriteCond %{REQUEST_FILENAME} !-d
-*    #RewriteCond %{REQUEST_FILENAME} !-f
-*    RewriteRule ^(.*)$ server-api.php
-* </IfModule>
-*/
+\<\?php <br/>
+require_once "../RestfulApi.php";<br/>
+// require_once '../../smarty-3.1.33/libs/Smarty.class.php';<br/>
+/** <br/>
+* use this in a htaccess file to make the restful api work <br/>
+* <IfModule mod_rewrite.c> <br/>
+*    RewriteEngine On <br/>
+*    RewriteBase / <br/>
+*    #RewriteCond %{REQUEST_FILENAME} !-d <br/>
+*    #RewriteCond %{REQUEST_FILENAME} !-f <br/>
+*    RewriteRule ^(.*)$ server-api.php <br/>
+* </IfModule> <br/>
+*/ <br/>
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);

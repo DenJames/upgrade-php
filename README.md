@@ -10,6 +10,7 @@ solutionprovided by this router engine
   5. it stop unexpected echo or print outside of the route;
   6. it support object buffer i.e allow content to be push to screen after every write to $plugin->res->body() or $plugin->res->pipe->push("");
 usage 
+
 <?php
 require_once "../RestfulApi.php";
 // require_once '../../smarty-3.1.33/libs/Smarty.class.php';

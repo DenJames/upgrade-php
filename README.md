@@ -33,19 +33,19 @@ $api->addPlugin("path",'Path');
 $api->addPlugin("buildroute",'BuildRoute');
 // $api->addPlugin("smarty",$smarty);
 $api->runPlugin("buildroute",function($plugin){
-    $plugin->route('/api/<string:controller>/<string:action>/<path:ffff>',["GET"])->run(function($data,$plugins){
+    $plugin->route('/api/&lt;string:controller&gt;/&lt;string:action&gt;/&lt;path:ffff&gt;',["GET"])->run(function($data,$plugins){
         echo "float is called";
         $path=$plugins->path;
         var_dump($data);
         //echo $path->currentPath();
     });
-    $plugin->route('/<string:name>/<float:php>',["GET"])->run(function($data,$plugins){
+    $plugin->route('/&lt;string:name&gt;/&lt;float:php&gt;',["GET"])->run(function($data,$plugins){
         echo "float is called";
         $path=$plugins->path;
         var_dump($data);
         //echo $path->currentPath();
     });
-    $plugin->route('/<string:name>/<int:php>',["GET"])->run(function($data,$plugins){
+    $plugin->route('/&lt;string:name&gt;/<int:php&gt;',["GET"])->run(function($data,$plugins){
         echo "int is called";
         $path=$plugins->path;
         var_dump($data);
